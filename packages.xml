@@ -395,6 +395,7 @@
       <patch strip="1">dpdk-dev-v2-2-2-kni-fix-igb-build-with-kernel-4.2.diff</patch>
       <patch strip="1">dpdk-dev-librte-fix-igb_uio-s-access-to-pci_dev--msi_list-for-kernels-4.3.diff</patch>
       <patch strip="1">dpdk-config.diff</patch>
+      <patch strip="1">dpdk-fix-clean.diff</patch>
     </patches>
   </package>
   <package>
