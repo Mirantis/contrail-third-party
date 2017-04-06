@@ -1,15 +1,3 @@
-diff --git a/dpdk/mk/rte.app.mk b/dpdk/mk/rte.app.mk
-index 3871205..2862487 100644
---- a/dpdk/mk/rte.app.mk
-+++ b/dpdk/mk/rte.app.mk
-@@ -83,7 +83,6 @@ _LDLIBS-$(CONFIG_RTE_LIBRTE_ACL)            += -lrte_acl
- _LDLIBS-$(CONFIG_RTE_LIBRTE_METER)          += -lrte_meter
- 
- _LDLIBS-$(CONFIG_RTE_LIBRTE_SCHED)          += -lrte_sched
--_LDLIBS-$(CONFIG_RTE_LIBRTE_SCHED)          += -lm
- _LDLIBS-$(CONFIG_RTE_LIBRTE_SCHED)          += -lrt
- 
- _LDLIBS-$(CONFIG_RTE_LIBRTE_VHOST)          += -lrte_vhost
 diff --git a/dpdk/config/common_bsdapp b/dpdk/config/common_bsdapp
 index b37dcf4..40cdc48 100644
 --- a/dpdk/config/common_bsdapp
@@ -24,7 +12,7 @@ index b37dcf4..40cdc48 100644
  ##
  ## define the architecture we compile for.
 diff --git a/dpdk/config/common_linuxapp b/dpdk/config/common_linuxapp
-index 0de43d5..0e260c2 100644
+index 0de43d5..087d143 100644
 --- a/dpdk/config/common_linuxapp
 +++ b/dpdk/config/common_linuxapp
 @@ -52,7 +52,7 @@ CONFIG_RTE_EXEC_ENV_LINUXAPP=y
@@ -36,6 +24,15 @@ index 0de43d5..0e260c2 100644
  #
  ##
  ## define the architecture we compile for.
+@@ -138,7 +138,7 @@ CONFIG_RTE_LIBRTE_KVARGS=y
+ #
+ CONFIG_RTE_LIBRTE_ETHER=y
+ CONFIG_RTE_LIBRTE_ETHDEV_DEBUG=n
+-CONFIG_RTE_MAX_ETHPORTS=32
++CONFIG_RTE_MAX_ETHPORTS=64
+ CONFIG_RTE_MAX_QUEUES_PER_PORT=256
+ CONFIG_RTE_LIBRTE_IEEE1588=n
+ CONFIG_RTE_ETHDEV_QUEUE_STAT_CNTRS=16
 diff --git a/dpdk/config/defconfig_i686-native-linuxapp-gcc b/dpdk/config/defconfig_i686-native-linuxapp-gcc
 index a90de9b..79e0259 100644
 --- a/dpdk/config/defconfig_i686-native-linuxapp-gcc
@@ -166,5 +163,18 @@ index fb0afc4..01e7938 100644
  
  CONFIG_RTE_ARCH="x86_x32"
  CONFIG_RTE_ARCH_X86_X32=y
-
+diff --git a/dpdk/mk/rte.app.mk b/dpdk/mk/rte.app.mk
+index 3871205..2862487 100644
+--- a/dpdk/mk/rte.app.mk
++++ b/dpdk/mk/rte.app.mk
+@@ -83,7 +83,6 @@ _LDLIBS-$(CONFIG_RTE_LIBRTE_ACL)            += -lrte_acl
+ _LDLIBS-$(CONFIG_RTE_LIBRTE_METER)          += -lrte_meter
+ 
+ _LDLIBS-$(CONFIG_RTE_LIBRTE_SCHED)          += -lrte_sched
+-_LDLIBS-$(CONFIG_RTE_LIBRTE_SCHED)          += -lm
+ _LDLIBS-$(CONFIG_RTE_LIBRTE_SCHED)          += -lrt
+ 
+ _LDLIBS-$(CONFIG_RTE_LIBRTE_VHOST)          += -lrte_vhost
+-- 
+2.7.4
 
