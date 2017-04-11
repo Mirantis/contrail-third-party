@@ -1,0 +1,21 @@
+diff --git a/dpdk/drivers/net/af_packet/rte_eth_af_packet.c b/dpdk/drivers/net/af_packet/rte_eth_af_packet.c
+index bdd9628..982b74d 100644
+--- a/dpdk/drivers/net/af_packet/rte_eth_af_packet.c
++++ b/dpdk/drivers/net/af_packet/rte_eth_af_packet.c
+@@ -636,6 +636,7 @@ rte_pmd_init_internals(const char *name,
+ 		}
+ 
+ #if defined(PACKET_FANOUT)
++/*
+ 		rc = setsockopt(qsockfd, SOL_PACKET, PACKET_FANOUT,
+ 				&fanout_arg, sizeof(fanout_arg));
+ 		if (rc == -1) {
+@@ -644,6 +645,7 @@ rte_pmd_init_internals(const char *name,
+ 				"for %s\n", name, pair->value);
+ 			goto error;
+ 		}
++*/
+ #endif
+ 	}
+ 
+
