@@ -397,6 +397,7 @@
       <patch strip="1">dpdk-config.diff</patch>
       <patch strip="1">dpdk-fix-clean.diff</patch>
       <patch strip="1">dpdk-rte_eth_af_packet.diff</patch>
+      <patch strip="1">dpdk-new-flags.diff</patch>
     </patches>
   </package>
   <package>
