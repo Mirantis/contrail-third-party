@@ -380,6 +380,13 @@
       <patch strip="1">openvswitch.diff</patch>
     </patches>
   </package>
+    <package>
+    <name>Userspace RCU</name>
+    <url>http://www.lttng.org/files/urcu/userspace-rcu-0.9.3.tar.bz2</url>
+    <local-filename>userspace-rcu-0.9.3.tar.bz2</local-filename>
+    <format>tbz</format>
+    <md5>920970e35a1a2066c8353eabfeab8730</md5>
+  </package>
   <package>
     <name>Go 1.8</name>
     <url>https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz</url>
