@@ -494,7 +494,10 @@
   </package>
   <package>
     <name>IPFIX library</name>
-    <url>https://sourceforge.net/projects/libipfix/files/libipfix/libipfix_110209.tgz</url>
+    <urls>
+     <url>{{ site_mirror }}/contrail-third-party/l/libipfix_110209.tgz</url>
+     <url canonical="true">https://sourceforge.net/projects/libipfix/files/libipfix/libipfix_110209.tgz/download</url>
+    </urls>
     <local-filename>libipfix_110209.tgz</local-filename>
     <format>tgz</format>
     <md5>35761deb685c7b4e15121454eb51da0c</md5>
