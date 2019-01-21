@@ -380,8 +380,8 @@
   </package>
   <package>
     <name>Cni Go Deps</name>
-    <url>https://github.com/Juniper/contrail-third-party-cache/raw/master/cni/cni_go_deps.tar.gz</url>
+    <url>https://github.com/Mirantis/contrail-third-party-cache-fixup/raw/master/cni_go_deps.tar.gz</url>
     <format>tgz</format>
-    <md5>823fcd824557fa0b6506e29d7591f76d</md5>
+    <md5>f3f3d5507b0493a328c8f86f4c7b9a35</md5>
   </package>
 </packages>
