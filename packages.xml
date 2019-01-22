@@ -397,6 +397,6 @@
     <name>Cni Go Deps</name>
     <url>https://github.com/Mirantis/contrail-third-party-cache-fixup/raw/master/cni_go_deps.tar.gz</url>
     <format>tgz</format>
-    <md5>4824c2e8ff6489c255e9879e5b2bbc7a</md5>
+    <md5>07d4ccfaaa3eff6407ce552d420bc60c</md5>
   </package>
 </packages>
