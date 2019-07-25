@@ -289,21 +289,25 @@
     </patches>
   </package>
   <package>
-    <name>Userspace RCU</name>
-    <url>http://www.lttng.org/files/urcu/userspace-rcu-0.9.3.tar.bz2</url>
-    <local-filename>userspace-rcu-0.9.3.tar.bz2</local-filename>
-    <format>tbz</format>
-    <md5>920970e35a1a2066c8353eabfeab8730</md5>
+    <name>Go 1.12</name>
+    <urls>
+      <url>{{ site_mirror }}/contrail-third-party/g/go1.12.7.linux-amd64.tar.gz</url>
+      <url canonical="true">https://storage.googleapis.com/golang/go1.12.7.linux-amd64.tar.gz</url>
+    </urls>
+    <local-filename>go1.12.7.linux-amd64.tar.gz</local-filename>
+    <format>tgz</format>
+    <md5>3f0ca2acb238bef57c7e2b6e3d8d0730</md5>
   </package>
   <package>
-    <name>Go 1.8</name>
+    <name>Golangci-lint</name>
     <urls>
-      <url>{{ site_mirror }}/contrail-third-party/g/go1.8.linux-amd64.tar.gz</url>
-      <url canonical="true">https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz</url>
+      <url>{{ site_mirror }}/contrail-third-party/g/golangci-lint-1.17.1-linux-amd64.tar.gz</url>
+      <url canonical="true">https://github.com/golangci/golangci-lint/releases/download/v1.17.1/golangci-lint-1.17.1-linux-amd64.tar.gz</url>
     </urls>
-    <local-filename>go1.8.linux-amd64.tar.gz</local-filename>
+    <local-filename>golangci-lint-1.17.1-linux-amd64.tar.gz</local-filename>
+    <rename>golangci-lint</rename>
     <format>tgz</format>
-    <md5>d0f6de92ccef6489a0d9b8efbb8f577f</md5>
+    <md5>d8c8fbd975b06778ccd8666026ecd09b</md5>
   </package>
   <package>
     <name>Cni Go Deps</name>
