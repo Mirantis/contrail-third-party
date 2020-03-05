@@ -1,0 +1,15 @@
+diff  a/dpdk/drivers/net/af_packet/rte_eth_af_packet.c b/dpdk/drivers/net/af_packet/rte_eth_af_packet.c
+--- a/dpdk/drivers/net/af_packet/rte_eth_af_packet.c
++++ b/dpdk/drivers/net/af_packet/rte_eth_af_packet.c
+@@ -668,6 +668,8 @@ rte_pmd_init_internals(const char *name,
+ 	data->nb_tx_queues = (uint16_t)nb_queues;
+ 	data->dev_link = pmd_link;
+ 	data->mac_addrs = &(*internals)->eth_addr;
++	strncpy(data->name,
++		(*eth_dev)->data->name, strlen((*eth_dev)->data->name));
+ 
+ 	pci_dev->numa_node = numa_node;
+ 
+-- 
+2.7.4
+
